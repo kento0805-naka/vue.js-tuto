@@ -53,4 +53,4 @@ var vm = new Vue({
 })
 
 
-items[0].quantitiy = 7;
+items[0].quantitiy = 3;

@@ -8,6 +8,12 @@
 </head>
 <body>
     <div id="app">
+        <ul>
+            <li v-for='item in items' v-bind:key='item.name'>
+                {{item.name}}の個数: <input type="number" v-model='item.quantitiy' min='0'>
+            </li>
+        </ul>
+        <hr>
         <div :style='errorMessageStyle'>
             <ul>
                 <li v-for="item in items" v-bind:key='item.name'>
