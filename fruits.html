@@ -6,10 +6,11 @@
     <title>fruits</title>
 </head>
 <body>
-    <div id="fruits-component">
-        <ol>
-            <fruits-item-name v-for='fruit in fruitsItems' :key='fruit.name' :fruits-item='fruit'></fruits-item-name>
-        </ol>
+    <div id="fruits-counter">
+        <div v-for='fruit in fruits'>
+            {{fruit.name}}: <counter-button v-on:increment='incrementCartStatus()'></counter-button>
+        </div>
+        <p>合計：{{total}}</p>
     </div>
 
     <script src="vue.js"></script>
