@@ -13,6 +13,14 @@ const router = new VueRouter({
                 template: '<div>ユーザー一覧ページです。</div>'
             }
         },
+        {
+            //パターンマッチングと名前付きルート
+            path: '/user/:userId',
+            name: 'user',
+            component: {
+                template: '<div>ユーザーのIDは{{ $route.params.userId }}です。</div>'
+            }
+        }
     ]
 })
 
