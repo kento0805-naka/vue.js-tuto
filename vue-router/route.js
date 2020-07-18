@@ -1,4 +1,8 @@
 
+const UserList = {
+    template: '<div>ユーザー一覧ページです。</div>'
+}
+
 const router = new VueRouter({
     routes: [
         {
@@ -9,9 +13,7 @@ const router = new VueRouter({
         },
         {
             path: '/users',
-            component: {
-                template: '<div>ユーザー一覧ページです。</div>'
-            }
+            component: UserList
         },
         {
             //パターンマッチングと名前付きルート
